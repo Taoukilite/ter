@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Socket.io</title>
+    </head>
+    <body>
+        <h1>Work Objetc:</h1>
+        
+        <input type="text" id="workObject" style="font-size:18pt;height:100%;width:100%;"/>
+        <input type="button" value="Send" id="sendmsg" />
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io.connect('http://localhost:5555');
+            var pseudo = prompt('Quel est votre pseudo ?');
+            socket.emit('petit_nouveau', pseudo);
+            socket.on('message', function(message) {
+
+                alert('Server : ' + message);
+                //var obj = JSON.parse(message);
+                //console.log("*****************************");
+                var jsonText = JSON.stringify(eval("(" + message + ")"));
+                var objj = JSON.parse(jsonText,function (key, value) {
+                    if (value && (typeof value === 'string') && value.indexOf("function") === 0) {
+                        // we can only pass a function as string in JSON ==> doing a real function
+                        var jsFunc = new Function('return ' + value)();
+                        return jsFunc;
+                    }
+                      
+                return value;
+                });
+                var rep = objj.fonc(2,3);
+                socket.emit('reponse',rep);
+
+
+            });
+            $('#sendmsg').click(function () {
+                socket.emit('message', document.getElementById('workObject').value);
+            });
+
+        </script>
+
+    </body>
+
+</html>
