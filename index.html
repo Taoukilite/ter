@@ -18,8 +18,6 @@
             socket.on('message', function(message) {
 
                 alert('Server : ' + message);
-                //var obj = JSON.parse(message);
-                //console.log("*****************************");
                 var jsonText = JSON.stringify(eval("(" + message + ")"));
                 var objj = JSON.parse(jsonText,function (key, value) {
                     if (value && (typeof value === 'string') && value.indexOf("function") === 0) {
