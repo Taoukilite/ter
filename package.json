@@ -1,14 +1,19 @@
 {
-  "name": "plateforme_calcul",
-  "version": "0.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "plateforme",
+  "version": "1.0.0",
+  "description": "TER",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "nodemon": "^1.11.0"
   }
 }

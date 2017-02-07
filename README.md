@@ -1,1 +1,1 @@
-# Plate-forme de calcul massive distribuée, basé sur la volontariat.
+# Plate-forme de calcul distribuée en JS, basé sur la volontariat.
