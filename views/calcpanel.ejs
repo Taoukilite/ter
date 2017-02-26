@@ -1,0 +1,18 @@
+<% include header %>
+
+<form action="/calcpanel" method="post" class="ui form">
+    <div class="field">
+        <label for="jobs">Nombre de jobs</label>
+        <input type="text" name="jobs" id="nbrJob"></input>
+    </div>
+    <div class="field">
+        <label for="Code">Code du job</label>
+        <textarea name="code" id="code"></textarea>
+    </div>
+
+    <button type="submit" class="ui blue labeled submit icon button">
+        <label class="icon edit"></label>Envoyer
+    </button>
+</form>
+
+<% include footer %>
