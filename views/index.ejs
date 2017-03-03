@@ -6,15 +6,22 @@
 </head>
 <body>
 <script>
-    var socket = io.connect('http://localhost:5555/');
+    var socket = io.connect('http://localhost:3000/');
     /*socket.on('prepare',function(date){
 
     });*/
+    socket.emit('ready',"sdsd");
+    console.log("here");
     socket.on('job', function (data) {
         var Run = eval("(" + data + ")");
         console.log("received");
         var res = Run();
+        setTimeout(function() {
+            console.log(" [x] Done");
+        }, 100000 * 1000);
         socket.emit('res', res.toString());
+
+       // socket.emit('ready',"client ready");
     });
 </script>
 
