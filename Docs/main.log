@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.7)  3 APR 2017 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.7)  3 APR 2017 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,20 +610,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -691,7 +691,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 21.
+Package hyperref Info: Link coloring ON on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -701,69 +701,78 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
+ <univ.png, id=43, 696.6828pt x 426.393pt>
+File: univ.png Graphic file (type png)
 
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+<use univ.png>
+Package pdftex.def Info: univ.png used on input line 36.
+(pdftex.def)             Requested size: 256.0748pt x 156.72844pt.
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<IntChercheur.png, id=51, 726.715pt x 586.19pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./univ.png>]
+<IntChercheur.png, id=54, 726.715pt x 586.19pt>
 File: IntChercheur.png Graphic file (type png)
  <use IntChercheur.png>
-Package pdftex.def Info: IntChercheur.png used on input line 79.
-(pdftex.def)             Requested size: 256.07741pt x 206.56491pt.
-
-<ArchGen.png, id=53, 791.95876pt x 707.64375pt>
+Package pdftex.def Info: IntChercheur.png used on input line 97.
+(pdftex.def)             Requested size: 384.1096pt x 309.83842pt.
+ [2]
+<ArchGen.png, id=62, 791.95876pt x 707.64375pt>
 File: ArchGen.png Graphic file (type png)
  <use ArchGen.png>
-Package pdftex.def Info: ArchGen.png used on input line 85.
-(pdftex.def)             Requested size: 256.07741pt x 228.81534pt.
- [2 <./IntChercheur.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
- [3 <./ArchGen.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+Package pdftex.def Info: ArchGen.png used on input line 112.
+(pdftex.def)             Requested size: 426.79135pt x 381.3553pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./IntChercheur.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+ [4 <./ArchGen.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 098687B41DFAB2AE534908AC8AE3951F;414.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
+(rerunfilecheck)             Checksum: 3BA79B8D867DEC2F44CC9F56A20FE83A;573.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 17821 strings out of 494910
- 326270 string characters out of 6179837
- 403378 words of memory out of 5000000
- 20779 multiletter control sequences out of 15000+600000
- 12440 words of font info for 33 fonts, out of 8000000 for 9000
+ 17810 strings out of 494910
+ 326159 string characters out of 6179837
+ 402354 words of memory out of 5000000
+ 20774 multiletter control sequences out of 15000+600000
+ 9808 words of font info for 22 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 62i,6n,56p,669b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,56p,669b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/lenovo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/
-lenovo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/lenovo/.te
-xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/lenovo/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/lenovo/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecrm1200.600pk> </home/lenovo/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+lenovo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/lenovo/.te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/lenovo/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/lenovo/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecrm1440.600pk> </home/lenovo/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on main.pdf (3 pages, 143263 bytes).
+Output written on main.pdf (4 pages, 306990 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
