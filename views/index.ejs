@@ -6,23 +6,56 @@
 </head>
 <body>
 <script>
-    var socket = io.connect('http://localhost:3000/');
-    /*socket.on('prepare',function(date){
 
-    });*/
-    socket.emit('ready',"sdsd");
-    console.log("here");
-    socket.on('job', function (data) {
-        var Run = eval("(" + data + ")");
-        console.log("received");
-        var res = Run();
-        setTimeout(function() {
-            console.log(" [x] Done");
-        }, 100000 * 1000);
-        socket.emit('res', res.toString());
-
-       // socket.emit('ready',"client ready");
+    var res=undefined;
+    var Run=undefined;
+    var socket = io.connect('http://localhost:3000/',{
+        econnection: true,
+        reconnectionDelay: 1000,
+        reconnectionDelayMax : 5000,
+        reconnectionAttempts: 9999 /* 999 reconnection attempts and then abondon */
     });
+
+    /*var tryReconnect = function(){
+
+        if (socket.socket.connected === false &&
+            socket.socket.connecting === false) {
+            // use a connect() or reconnect() here if you want
+            socket.socket.reconnect();
+            socket.emit('ready',"client ready");
+        }
+    }*/
+    var jobFini=true;
+    //var intervalID = setInterval(tryReconnect, 2000);
+    socket.emit('ready',"client ready");
+    socket.on('job', function (data) {
+        jobFini=false;
+       // clearInterval(intervalID);
+        Run = eval("(" + data + ")");
+        res = Run(Math.floor(Math.random()*1476));
+        socket.emit('res', res.toString());
+        console.log(" [x] Done");
+        //res = undefined;
+        //Run = undefined;
+        jobFini=true;
+        socket.emit('ready',"client ready");
+
+    });
+    socket.on('reconnect',function(){
+        //socket.socket.reconnect();
+        if(jobFini) {
+            socket.emit('ready', "client ready");
+            jobFini=true;
+        }else{
+            jobFini=true;
+            socket.emit('res', res.toString());
+            console.log(" [x] Done before reconnection, sended now");
+            socket.emit('ready',"client ready");
+
+        }
+
+    });
+
 </script>
 
 </body>

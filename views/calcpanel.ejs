@@ -3,15 +3,36 @@
 <form action="/calcpanel" method="post" class="ui form">
     <div class="field">
         <label for="jobs">Nombre de jobs</label>
-        <input type="text" name="nbrJob" id="nbrJob"></input>
+        <input type="text" name="nbrJob" id="nbrJob" value="10"></input>
     </div>
     <div class="field">
         <label for="Code">Code du job</label>
-        <textarea name="code" id="code"></textarea>
+        <textarea name="code" id="code">
+function job(p){
+        function main(num){
+            var a = 1, b = 0, temp;
+            while (num >= 0){
+                temp = a;
+                a = a + b;
+                b = temp;
+                num--;
+            }
+            console.log(f1());
+            console.log(f2());
+            console.log(f3());
+            console.log(b);
+            return b;
+        }
+        function f1(){ return "fonction1"; }
+        function f2(){ return "fonction2"; }
+        function f3(){ return "fonction3"; }
+        return main(p);
+}
+        </textarea>
     </div>
 
     <button type="submit" class="ui blue labeled submit icon button">
-        <label class="icon edit"></label>Envoyer
+        <label class="icon edit">Start</label>
     </button>
 </form>
 

@@ -1,0 +1,148 @@
+/*** Callback version with exports ***/
+
+/* exports.startAMQPconnection = function(socket){
+
+    amqp.connect(AMQPHost, function(err, conn) {
+        if (err) {
+            console.error("[AMQP]", err.message);
+            return setTimeout(start, 1000);
+        }
+        conn.on("error", function(err) {
+            if (err.message !== "Connection closing") {
+                console.error("[AMQP] conn error", err.message);
+            }
+        });
+        conn.on("close", function() {
+            console.error("[AMQP] reconnecting ");
+            return setTimeout(AMQPconnection, 1000);
+        });
+        console.log("[AMQP] connected");
+        amqpConn = conn;
+        return conn;
+        //createAMQPchannel(conn);
+    });
+}
+
+exports.createAMQPchannel = function(queue, opt){
+
+    if(amqpConn !== undefined){
+        amqpConn.createChannel(function(err, ch) {
+            if (closeOnErr(err)) return;
+            ch.on("error", function (err) {
+                console.error("[AMQP] channel error", err.message);
+            });
+            ch.on("close", function () {
+                console.log("[AMQP] channel closed");
+            });
+
+            ch.prefetch(1);
+            ch.assertQueue(queue, opt, function (err, _ok) {
+                if (closeOnErr(err)) return undefined;
+                //startAMQPconsuming(ch);
+                return ch;
+                //console.log("Worker is started");
+            });
+        });
+    }
+
+}
+
+
+exports.startAMQPconsuming = function(ch, queueW, queueR ,socket){
+
+    ch.consume(queueW, processJob, {noAck: false});
+    function processJob(msg) {
+        socket.emit('job',msg);
+        socket.on('res', function(data) {
+            var ch = createAMQPchannel(queueR);
+
+            try {
+                //if (ok)
+                ch.ack(msg);
+                //else
+                //ch.reject(msg, true);
+            } catch (e) {
+                closeOnErr(e);
+            }
+        });
+    }
+}
+*/
+
+/*** Promises version of startWorking ***/
+/*
+open.then(function(conn) {
+    return conn.createChannel();
+}).then(function(ch) {
+    ch.prefetch(0);
+    return ch.assertQueue(QueueW, {durable: false} ).then(function(ok) {
+        socket.on('ready',function(data){
+            return ch.consume(QueueW, function(msg) {
+                if (msg !== null) {
+                    //console.log(msg.content.toString());
+                    socket.emit('job', msg.content.toString());
+                    socket.on('res', function (data) {
+                        if(data != undefined) {
+                            console.log("res\n");
+                            console.log(data);
+                            data = undefined;
+                            ch.ack(msg);
+                        }
+                    });
+                }
+                //conn.close();
+            });
+        });
+    });
+
+}).catch(console.warn);
+*/
+
+/*** Callback version of startWorking without exports ****/
+/*
+amqp.connect("amqp://localhost/",
+    function(err, conn){
+        if (err != null){
+            console.log("Connection error");
+            console.error(err);
+            process.exit(1);
+        }
+        conn.createChannel(function(err, ch) {
+            if (err != null){
+                console.log("Channel creation error");
+                console.error(err);
+                process.exit(1);
+            }
+            else if(ch != null) {
+                var QueueW = 'Work_queue';
+                var QueueR = 'Response_queue';
+                ch.assertQueue(QueueW, {durable: false});
+
+                ch.prefetch(1, global);
+                //var msg = "function(){return ' "+r+" "+r+" "+r+" ';}";
+                // io.on('ready',function(){
+                socket.on('ready',function(data){
+                    ch.consume(QueueW, function(msg) {
+                        if(msg.content) {
+                            console.log(msg.content.toString());
+                            socket.emit('job', msg.content.toString());
+                            socket.on('res', function (data) {
+                                if(data != undefined) {
+                                    console.log(data);
+                                    data = undefined;
+
+                                }
+                                //conn.close();
+                                //socket.emit('job',msg.toString());
+                            });
+                        }
+
+                        //conn.close();
+                    },{noAck: true});
+                });
+
+            }
+
+        });
+    });
+*/

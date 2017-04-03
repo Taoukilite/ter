@@ -7,7 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('plateforme:server');
 var http = require('http');
-var amqp = require('amqplib/callback_api');
+var volunteer = require("../Modules/AMQPutils.js");
+//var amqp = require('amqplib/callback_api');
 
 /**
  * Get port from environment and store in Express.
@@ -21,51 +22,27 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
 /**
  * WebSocket using socket.io
  */
+//var open = require('amqplib').connect('amqp://localhost');
+
+
+/* Error handler */
+function bail(err) {
+    console.error(err);
+    process.exit(1);
+}
+
+/** Setting up socket.io onConnection event **/
 
 var io = require('socket.io')(server);
+io.setMaxListeners(Infinity);
 io.on('connection', function (socket) {
-    /* connection au server rabbitmq pour chaque connection websocket */
-    //socket.on('ready',function(data){
-        amqp.connect("amqp://localhost/",
-            function(err, conn){
-                if (err != null){
-                    console.log("Connection error");
-                    console.error(err);
-                    process.exit(1);
-                }
-                conn.createChannel(function(err, ch) {
-                    if (err != null){
-                        console.log("Channel creation error");
-                        console.error(err);
-                        process.exit(1);
-                    }
-                    else if(ch != null) {
-                        var QueueW = 'Work_queue';
-                        var QueueR = 'Response_queue';
-                        ch.assertQueue(QueueW, {durable: false});
-
-                        ch.prefetch(1);
-                        //var msg = "function(){return ' "+r+" "+r+" "+r+" ';}";
-                       // io.on('ready',function(){
-                            ch.consume(QueueW, function(msg) {
-                                console.log(msg.content.toString());
-                                socket.emit('job',msg.content.toString());
-                                socket.on('res', function (data) {
-                                    console.log(data);
-                                    //socket.emit('job',msg.toString());
-                                });
-                            }, {noAck: true});
-                       // });
-
-                    }
-                });
-            });
-    //});
-
+    volunteer.startWorking(socket);
 });
+
 /**
  * Listen on provided port, on all network interfaces.
  */

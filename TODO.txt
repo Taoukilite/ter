@@ -1,0 +1,5 @@
+//TODO manage response tickets RABBITMQ --> Done "they still on the rabbitmq server"
+//TODO generating/sending job tickets to RABBITMQ --> Done "should be more developed"
+//TODO construct job objects with ID, JOBCODE, ... --> Done "no object just code representation will do the staff"
+//TODO Reduce function --> not yet
+//TODO websocket reconnection --> not yet
