@@ -107,17 +107,34 @@ La plateforme gére des calcul distribué qui seront fait en Javascript, pour ce
 \item Middleware : L'utilisation d'un middleware type serveur de file de messages, ce serveur permetteras de stocker les jobs créer, et aussi les résultats des jobs reçus de la part des volontaires, il permettra aussi d'avoir une bonne scalabilité de notre application en ayant la possibilité d'ajouter des instance du serveur web pour augmenter les performances de la plateforme.
 \end{itemize} 
 
-\begin{figure}[h]
+\begin{center}
 \centering
 \includegraphics[width=1\textwidth]{ArchGen.png}
-\caption{\label{fig:ArchGenarale}Architecture générale de la plate-forme}
-\end{figure}
+\end{center}
 
-\section{Scénarios}
-\subsection{scénario lancement du calcul}
 
-\subsection{scénario creation/envoie des jobs}
-\subsection{scénario récuperation des résultats}
+
+\section{Scénarios, Plan et Execution}
+\subsection{Creation et depots des jobs}
+\begin{center}
+\centering
+\includegraphics[width=1\textwidth]{creation_depot.jpg}
+\end{center}
+
+\subsection{Envoie des jobs et récuperation des résultats}
+\begin{center}
+\centering
+\includegraphics[width=1\textwidth]{conso.jpeg}
+\end{center}
+\subsection{Execution}
+Pour lancer la plateforme il suffit de lancer le script WWW avec la commande ./WWW (chmod 755 WWW), ce script s'occupe de lancer le serveur et puis il se met en attente sur le port 3000, donc pour se rendre sur l'interface chercheur il faut visiter l'URL http://localhost:3000/calcpanel.\newline{}
+Pour l'interface volontaire qui permet de participer au calcul,  il faut se rendre sur l'URL http://localhost:3000/, cette interface est une page blanche, mais qui communique avec la plateforme en continue et en temps réel grâce au websockets, en effet cette page reçoit des jobs les exécutent ensuite elle renvoie le résultat et ainsi de suite jusqu'à qu'il n ' y as plus de jobs.
+\subsection{Plan}
+\begin{center}
+\centering
+\includegraphics[width=1\textwidth]{Plan.jpeg}
+\end{center}
+
 
 \end{document}
 
