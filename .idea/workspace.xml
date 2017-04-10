@@ -5,33 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bfebdc1-343c-4e25-b07f-9b0ce48ba3ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/AdminPage.bmpr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/ArchGen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/IntChercheur.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.bbl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.synctex.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.aux" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.blg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.fdb_latexmk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.fls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/main.tex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/sample.bib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Modules/AMQPutils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TODO.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrashCode.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeExample.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/ArchGen.png" afterPath="$PROJECT_DIR$/Docs/ArchGen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/main.pdf" afterPath="$PROJECT_DIR$/Docs/main.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/main.synctex.gz" afterPath="$PROJECT_DIR$/Docs/main.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/calcpanel.js" afterPath="$PROJECT_DIR$/routes/calcpanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/calcpanel.ejs" afterPath="$PROJECT_DIR$/views/calcpanel.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/main.log" afterPath="$PROJECT_DIR$/Docs/main.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TODO.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TODO.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TODO.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -108,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="www" pinned="false" current-in-tab="false">
+      <file leaf-file-name="www" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#normalizePort#0" expanded="false" />
                 <element signature="n#!!block;n#onError#0" expanded="false" />
@@ -203,7 +181,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="27" />
     <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="height" value="721" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
@@ -287,15 +265,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plateforme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plateforme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -785,7 +777,10 @@
       <workItem from="1490951031604" duration="5515000" />
       <workItem from="1490961670895" duration="703000" />
       <workItem from="1490962689829" duration="5000" />
-      <workItem from="1491220531752" duration="135000" />
+      <workItem from="1491220531752" duration="344000" />
+      <workItem from="1491233743019" duration="701000" />
+      <workItem from="1491310741958" duration="2757000" />
+      <workItem from="1491818410456" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="amqp">
       <created>1488151115260</created>
@@ -801,11 +796,32 @@
       <option name="project" value="LOCAL" />
       <updated>1488574869350</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AMQP Update">
+      <created>1491220758787</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1491220758787</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Docs">
+      <created>1491233811190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1491233811190</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Docs">
+      <created>1491318390995</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491318390995</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175256000" />
+    <option name="totallyTimeSpent" value="178944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,7 +833,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1280" height="773" extended-state="6" />
+    <frame x="0" y="27" width="1280" height="721" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -835,7 +851,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31840795" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21753247" sideWeight="0.48418492" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22970779" sideWeight="0.48418492" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -892,7 +908,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="amqp" />
-    <option name="LAST_COMMIT_MESSAGE" value="amqp" />
+    <MESSAGE value="AMQP Update" />
+    <MESSAGE value="Docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -905,18 +923,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#normalizePort#0" expanded="false" />
-            <element signature="n#!!block;n#onError#0" expanded="false" />
-            <element signature="n#!!block;n#onListening#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/AMQPutils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1258,18 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#normalizePort#0" expanded="false" />
-            <element signature="n#!!block;n#onError#0" expanded="false" />
-            <element signature="n#!!block;n#onListening#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TrashCode.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2499">
@@ -1318,11 +1312,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TODO.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#normalizePort#0" expanded="false" />
+            <element signature="n#!!block;n#onError#0" expanded="false" />
+            <element signature="n#!!block;n#onListening#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

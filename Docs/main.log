@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.7)  4 APR 2017 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.7)  7 APR 2017 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,11 +734,11 @@ File: IntChercheur.png Graphic file (type png)
 Package pdftex.def Info: IntChercheur.png used on input line 97.
 (pdftex.def)             Requested size: 384.1096pt x 309.83842pt.
  [2]
-<ArchGen.png, id=66, 791.95876pt x 707.64375pt>
+<ArchGen.png, id=66, 772.8875pt x 586.19pt>
 File: ArchGen.png Graphic file (type png)
  <use ArchGen.png>
 Package pdftex.def Info: ArchGen.png used on input line 112.
-(pdftex.def)             Requested size: 426.79135pt x 381.3553pt.
+(pdftex.def)             Requested size: 426.79135pt x 323.69351pt.
  [3 <./IntChercheur.png>] <creation_depot.jpg, id=72, 597.73312pt x 845.40843pt
 >
 File: creation_depot.jpg Graphic file (type jpg)
@@ -789,7 +789,7 @@ nts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/lenovo/.texmf-var/fonts/pk/ljf
 our/jknappen/ec/ecrm1440.600pk> </home/lenovo/.texmf-var/fonts/pk/ljfour/jknapp
 en/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on main.pdf (7 pages, 561245 bytes).
+Output written on main.pdf (7 pages, 560860 bytes).
 PDF statistics:
  294 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
